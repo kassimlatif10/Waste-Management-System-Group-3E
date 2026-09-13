@@ -1,0 +1,36 @@
+# Secrets — never commit
+.env
+*.env
+!.env.example
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+startup_logs/
+
+# ── Python / Django (wastbankend) ──────────────────────────────────────────
+venv/
+venv_wsl/
+__pycache__/
+*.pyc
+db.sqlite3
+staticfiles/
+media/
+
+# ── Flutter (Wast-Mobile) ───────────────────────────────────────────────────
+Wast-Mobile/build/
+Wast-Mobile/.dart_tool/
+Wast-Mobile/.flutter-plugins
+Wast-Mobile/.flutter-plugins-dependencies
+Wast-Mobile/android/.gradle/
+Wast-Mobile/android/local.properties
+Wast-Mobile/ios/Pods/
+Wast-Mobile/ios/.symlinks/
+Wast-Mobile/*.iml
+hs_err_pid*.log
+
+# ── Supabase CLI ─────────────────────────────────────────────────────────
+supabase/.temp/
